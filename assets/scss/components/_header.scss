@@ -1,0 +1,51 @@
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: $white;
+  width: 100%;
+  &__wrapper {
+    padding: 28px 16px;
+    display: flex;
+    justify-content: space-between;
+    ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      li {
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 44px;
+        color: $black;
+        &:hover {
+          text-decoration: underline;
+          text-underline-offset: 7px;
+        }
+      }
+      a.active {
+        text-decoration: underline;
+        text-underline-offset: 7px;
+      }
+    }
+  }
+  &__burgerMenu {
+    display: flex !important;
+    flex-direction: column;
+    gap: 6px;
+    @media screen and (min-width: 767px) {
+      display: none !important;
+    }
+    span {
+      width: 24px;
+      background-color: $black;
+      height: 2px;
+    }
+  }
+}

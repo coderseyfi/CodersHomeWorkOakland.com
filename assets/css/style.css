@@ -1,0 +1,267 @@
+.container {
+  max-width: 1240px;
+  margin: 0 auto; }
+
+.mobSeem {
+  display: none !important;
+  margin-bottom: 70px; }
+  @media screen and (max-width: 767px) {
+    .mobSeem {
+      display: flex !important; } }
+
+.deskSeem {
+  display: none !important; }
+  @media screen and (min-width: 768px) {
+    .deskSeem {
+      display: flex !important; } }
+
+.distance {
+  height: 784px;
+  width: 100%; }
+
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 100%; }
+  .header__wrapper {
+    padding: 28px 16px;
+    display: flex;
+    justify-content: space-between; }
+    .header__wrapper ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center; }
+      @media screen and (max-width: 767px) {
+        .header__wrapper ul li {
+          display: none; } }
+      .header__wrapper ul a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 44px;
+        color: #111111; }
+        .header__wrapper ul a:hover {
+          text-decoration: underline;
+          text-underline-offset: 7px; }
+      .header__wrapper ul a.active {
+        text-decoration: underline;
+        text-underline-offset: 7px; }
+  .header__burgerMenu {
+    display: flex !important;
+    flex-direction: column;
+    gap: 6px; }
+    @media screen and (min-width: 767px) {
+      .header__burgerMenu {
+        display: none !important; } }
+    .header__burgerMenu span {
+      width: 24px;
+      background-color: #111111;
+      height: 2px; }
+
+.footer {
+  background: #111111;
+  padding: 130px 0; }
+  .footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 70px; }
+    .footer__wrapper h2 {
+      text-align: center;
+      color: #fff;
+      font-size: 48px;
+      line-height: 1.1;
+      font-weight: 700; }
+  .footer__link {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: start;
+    padding: 20px 48px;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    background-color: #e6382a; }
+  .footer__social {
+    margin-top: 30px;
+    display: flex;
+    gap: 130px; }
+    @media screen and (max-width: 767px) {
+      .footer__social {
+        gap: 90px; } }
+    .footer__social a {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 30px; }
+
+.home {
+  background-color: #fff; }
+  .home__wrapper {
+    padding: 140px 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    @media screen and (max-width: 767px) {
+      .home__wrapper {
+        padding: 110px 80px; } }
+    .home__wrapper h1 {
+      text-align: center;
+      color: #e6382a;
+      font-size: 70px;
+      line-height: 1.4;
+      font-weight: 900; }
+      @media screen and (max-width: 767px) {
+        .home__wrapper h1 {
+          font-size: 40px; } }
+    .home__wrapper a {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-self: start;
+      padding: 20px 48px;
+      text-decoration: none;
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      color: #fff;
+      background-color: #111111; }
+
+.backImg img {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 60px;
+  background: #fff; }
+  .about h2 {
+    text-align: center;
+    color: #e6382a;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 500; }
+  .about p {
+    width: 70%;
+    margin: 60px auto;
+    text-align: center;
+    color: #111111;
+    font-size: 18px;
+    font-weight: 500; }
+  .about__black {
+    width: 80%;
+    height: 560px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #000; }
+
+.works {
+  background: #e6382a;
+  padding: 130px 0; }
+  .works__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px; }
+    .works__wrapper h3 {
+      text-align: center;
+      color: #fff;
+      font-size: 48px;
+      line-height: 1.1;
+      font-weight: 900; }
+
+.projects {
+  padding: 120px 0;
+  background: #fff; }
+  .projects__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .projects__wrapper h2 {
+      text-align: center;
+      color: #e6382a;
+      font-size: 48px;
+      line-height: 1.1;
+      font-weight: 700; }
+    .projects__wrapper p {
+      width: 60%;
+      margin: 60px auto;
+      text-align: center;
+      color: #111111;
+      font-size: 18px;
+      font-weight: 500; }
+  .projects__con {
+    display: flex;
+    align-items: center;
+    gap: 20px; }
+    @media screen and (max-width: 767px) {
+      .projects__con {
+        flex-direction: column; } }
+    .projects__con-item img {
+      width: 100%;
+      cursor: zoom-in; }
+  .projects a {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: start;
+    padding: 20px 48px;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    background-color: #111111; }
+
+.comment {
+  background: #e6382a;
+  padding: 130px 0; }
+  .comment__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 0 130px; }
+    @media screen and (max-width: 767px) {
+      .comment__wrapper {
+        padding: 0 50px; } }
+    .comment__wrapper h3 {
+      color: #fff;
+      font-size: 48px;
+      line-height: 1.1;
+      font-weight: 900; }
+      @media screen and (max-width: 767px) {
+        .comment__wrapper h3 {
+          font-size: 30px; } }
+    .comment__wrapper span {
+      color: #fff;
+      font-size: 17px;
+      line-height: 1.1;
+      font-weight: 600; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif; }

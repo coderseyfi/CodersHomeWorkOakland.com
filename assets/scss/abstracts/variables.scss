@@ -1,0 +1,27 @@
+$white: #fff;
+$black: #111111;
+$red: #e6382a;
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  @media screen {
+  }
+}
+.mobSeem {
+  display: none !important;
+  margin-bottom: 70px;
+  @media screen and (max-width: 767px) {
+    display: flex !important;
+  }
+}
+.deskSeem {
+  display: none !important;
+  @media screen and (min-width: 768px) {
+    display: flex !important;
+  }
+}
+.distance {
+  height: 784px;
+  width: 100%;
+}

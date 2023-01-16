@@ -1,0 +1,182 @@
+.home {
+  background-color: $white;
+  &__wrapper {
+    padding: 140px 110px;
+    @media screen and (max-width: 767px) {
+         padding: 110px 80px;
+      }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+      text-align: center;
+      color: $red;
+      font-size: 70px;
+      line-height: 1.4;
+      font-weight: 900;
+      @media screen and (max-width: 767px) {
+        font-size: 40px;
+      }
+    }
+    a {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-self: start;
+      padding: 20px 48px;
+      text-decoration: none;
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      color: $white;
+      background-color: $black;
+    }
+  }
+}
+
+.backImg {
+  img {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 60px;
+  background: $white;
+
+  h2 {
+    text-align: center;
+    color: $red;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 500;
+  }
+  p {
+    width: 70%;
+    margin: 60px auto;
+    text-align: center;
+    color: $black;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__black {
+    width: 80%;
+    height: 560px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #000;
+  }
+}
+
+.works {
+  background: $red;
+  padding: 130px 0;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    h3 {
+      text-align: center;
+      color: $white;
+      font-size: 48px;
+      line-height: 1.1;
+      font-weight: 900;
+    }
+  }
+}
+.projects {
+  padding: 120px 0;
+  background: $white;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      text-align: center;
+      color: $red;
+      font-size: 48px;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+    p {
+      width: 60%;
+      margin: 60px auto;
+      text-align: center;
+      color: $black;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  &__con {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+    gap: 20px;
+    &-item {
+      img {
+        width: 100%;
+        cursor: zoom-in;
+      }
+    }
+  }
+  a {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: start;
+    padding: 20px 48px;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: $white;
+    background-color: $black;
+  }
+}
+.comment {
+  background: $red;
+  padding: 130px 0;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 0 130px;
+    @media screen and (max-width: 767px) {
+         padding: 0 50px;
+      }
+    h3 {
+      color: $white;
+      font-size: 48px;
+      @media screen and (max-width: 767px) {
+         font-size: 30px;
+      }
+      line-height: 1.1;
+      font-weight: 900;
+    }
+    span {
+      color: $white;
+      font-size: 17px;
+      line-height: 1.1;
+      font-weight: 600;
+    }
+  }
+}

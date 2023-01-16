@@ -1,0 +1,48 @@
+.footer {
+  background: $black;
+  padding: 130px 0;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 70px;
+    h2 {
+      text-align: center;
+      color: $white;
+      font-size: 48px;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+  }
+  &__link {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: start;
+    padding: 20px 48px;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: $white;
+    background-color: $red;
+  }
+  &__social {
+    margin-top: 30px;
+    display: flex;
+    gap: 130px;
+    @media screen and (max-width: 767px) {
+      gap: 90px;
+    }
+    a {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      color: $white;
+      text-decoration: none;
+      font-size: 30px;
+    }
+  }
+}
